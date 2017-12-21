@@ -1,0 +1,568 @@
+/*
+Theme name: Arcandia Records Woocommerce
+Author: Claire BOURDALE - Arroweb
+Author URI: https://arroweb.net
+Description: Theme boutique Arcandia Records
+Version: 1.0
+Template: storefront
+Text Domain: arcandiarecords-shop
+*/
+/*
+ ***************************************
+ *
+ * 1 - GENERALITES
+ * 2 - LANGUES
+ * 3 - HEADER
+ * 4 - NAVIGATION
+ * 5 - SLIDER
+ * 6 - PRODUITS MSM
+ * 7 - ENCART MENTIONS
+ * 8 - FOOTER
+ * 9 - PAGE INTERNE
+ * 10 - WOOCOMMERCE SURCHARGE
+ *
+ ***************************************
+ */
+/*
+ ***************************************
+ * 1 - GENERALITES
+ ***************************************
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif; }
+
+h1 {
+  font-size: 2rem;
+  color: #314047;
+  font-family: "Lato", sans-serif; }
+
+h2, h3 {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px 0 15px 0 !important; }
+
+header.entry-header {
+  background-color: transparent;
+  height: auto;
+  margin: 0px;
+  padding: 0px; }
+
+a:hover {
+  text-decoration: none !important; }
+
+/*
+ ***************************************
+ * 2 - LANGUES
+ ***************************************
+ */
+.language {
+  width: 100%;
+  height: 25px;
+  background-color: #142931; }
+
+.language p {
+  text-align: right;
+  font-size: 0.8rem;
+  line-height: 25px;
+  padding-right: 15px; }
+
+.language a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6); }
+
+.language a:hover {
+  color: #fff; }
+
+/*
+ ***************************************
+ * 3 - HEADER
+ ***************************************
+ */
+header {
+  width: 100%;
+  height: 140px;
+  color: #fff; }
+
+.wrapper-header {
+  background-color: #314047;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("img/icone-msm.png");
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+
+.logo {
+  padding: 0 30px; }
+
+.header-text {
+  padding: 0 30px; }
+
+.header-text h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  padding-bottom: 10px !important;
+  font-size: 1.8rem !important;
+  color: #fff; }
+
+.header-text h3 {
+  font-weight: normal;
+  font-size: 1.4rem !important;
+  color: #fff; }
+
+@media (max-width: 800px) {
+  .header-text h3 {
+    display: none; } }
+@media (max-width: 500px) {
+  .header-text h2 {
+    font-size: 1.4rem !important; } }
+@media (max-width: 440px) {
+  .header-text h2 {
+    display: none; } }
+/*
+ ***************************************
+ * 4 - NAVIGATION
+ ***************************************
+ */
+.bg-light {
+  background-color: #455A62 !important; }
+
+.nav-link {
+  color: #fff !important; }
+
+.menu-item a {
+  color: #fff !important;
+  padding-right: 10px !important;
+  font-size: 1rem !important; }
+
+.navbar-brand {
+  color: #fff !important; }
+
+.navbar-brand .fa {
+  padding-right: 5px; }
+
+.navbar-toggler {
+  border-color: white !important; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+/*
+ ***************************************
+ * 5 - SLIDER
+ ***************************************
+ */
+#slider {
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+.carousel-indicators {
+  bottom: 0px !important; }
+
+.carousel-indicators li {
+  position: relative;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: #142931;
+  bottom: -40px; }
+
+.carousel-indicators .active {
+  background-color: #455A62; }
+
+.carousel-caption {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  color: #fff;
+  text-align: left;
+  background-color: rgba(47, 62, 69, 0.8); }
+
+.caption-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.caption-text {
+  margin: 0;
+  padding: 0 10px 0 20px;
+  font-size: 1rem; }
+
+.caption-text a {
+  color: #fff; }
+
+.caption-text a:hover {
+  text-decoration: none; }
+
+.caption-cta {
+  margin: 0;
+  padding: 0 20px 0 10px; }
+
+.caption-cta a {
+  display: inline-block;
+  background-color: #C4B798;
+  padding: 5px 20px;
+  color: #314047;
+  transition: all ease 0.4s; }
+
+.caption-cta a:hover {
+  background-color: #142931;
+  color: #fff;
+  text-decoration: none; }
+
+@media (max-width: 800px) {
+  .caption-cta {
+    display: none; } }
+@media (max-width: 580px) {
+  #slider {
+    display: none; } }
+/*
+ ***************************************
+ * 6 - PRODUITS MSM
+ ***************************************
+ */
+#produits-msm {
+  margin-top: 70px;
+  margin-bottom: 40px; }
+
+#produits-msm h2 {
+  font-family: "Oswald", sans-serif;
+  color: #314047;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 10px 20px 30px 20px !important; }
+
+#produits-msm h2::before,
+#produits-msm h2::after {
+  content: '';
+  width: 3em;
+  border-bottom: #314047 solid 1px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px; }
+
+#produits-msm h2::before {
+  margin-right: 30px; }
+
+#produits-msm h2::after {
+  margin-left: 30px; }
+
+.wrapper-produits-msm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.produit-front {
+  color: #314047;
+  text-align: center;
+  width: 300px;
+  margin: 10px 5px 30px 5px; }
+
+.produit-front h3 {
+  font-size: 1rem;
+  padding: 0 0px; }
+
+.produit-front h4 {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding: 5px 0 10px 0; }
+
+.produit-img {
+  margin-bottom: 15px; }
+
+.produit-front a {
+  color: #314047;
+  font-size: 1.1rem; }
+
+.btn-add-cart a {
+  display: inline-block;
+  background-color: #314047;
+  color: #fff;
+  width: 100%;
+  padding: 6px 0;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
+.btn-add-cart a:hover {
+  text-decoration: none;
+  color: #C4B798; }
+
+.btn-add-cart .fa {
+  padding-right: 5px; }
+
+@media (max-width: 720px) {
+  #produits-msm h2::before,
+  #produits-msm h2::after {
+    width: 0em;
+    border-bottom: #314047 solid 0px;
+    margin-right: 0px; }
+
+  #produits-msm h2::before {
+    margin-right: 0px; }
+
+  #produits-msm h2::after {
+    margin-left: 0px; } }
+/*
+ ***************************************
+ * 7 - ENCART MENTIONS
+ ***************************************
+ */
+#encart-mentions {
+  width: 100%;
+  background-color: #C4B798;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #314047;
+  text-align: center;
+  padding: 20px 0; }
+
+.mentions-securite {
+  width: 50%;
+  border-right: solid 1px #9b8e6d; }
+
+.mentions-securite p {
+  margin: 0 !important;
+  padding: 5px 0 !important;
+  font-size: 1.2rem; }
+
+.mentions-securite .fa {
+  padding-right: 5px; }
+
+.mentions-label {
+  width: 50%;
+  font-family: "Oswald", sans-serif; }
+
+.mentions-label h2 {
+  text-transform: uppercase;
+  margin: 0 !important; }
+
+.mentions-label h3 {
+  margin: 0 !important;
+  font-size: 1.2rem; }
+
+.mentions-label h4 {
+  margin: 0 !important;
+  padding-top: 15px !important;
+  font-size: 2rem;
+  font-weight: bolder; }
+
+@media (max-width: 800px) {
+  #encart-mentions {
+    justify-content: center; }
+
+  .mentions-securite {
+    width: 80%;
+    border-right: 0px;
+    border-bottom: solid 1px #9b8e6d;
+    padding-bottom: 20px; }
+
+  .mentions-label {
+    width: 100%;
+    padding-top: 20px; } }
+/*
+ ***************************************
+ * 8 - FOOTER
+ ***************************************
+ */
+.footer-01 {
+  width: 100%;
+  background-color: #314047;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 40px 0 20px 0;
+  /* background-image: url('../img/logo-msm-fr.png'); --> cf header.php */
+  background-repeat: no-repeat;
+  background-position: bottom 20px right 20px; }
+
+.footer-01 a {
+  color: rgba(255, 255, 255, 0.65); }
+
+.footer-01 a:hover {
+  color: #fff;
+  text-decoration: none; }
+
+.footer-menu {
+  padding: 0 30px; }
+
+.footer-menu h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.65); }
+
+.footer-menu ul {
+  list-style-type: none;
+  margin-left: 0px; }
+
+.menu-footer-menu-container a {
+  color: rgba(255, 255, 255, 0.65) !important; }
+
+.menu-footer-menu-container a:hover {
+  color: #fff !important;
+  text-decoration: none !important; }
+
+.footer-menu li a {
+  color: rgba(255, 255, 255, 0.65) !important; }
+
+.footer-menu li a:hover {
+  color: #fff !important;
+  text-decoration: none !important; }
+
+.footer-coordonates {
+  padding: 0 50px; }
+
+.footer-coordonates h2 {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.7); }
+
+.footer-02 {
+  width: 100%;
+  min-height: 35px;
+  background-color: #142931;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7); }
+
+.footer-02 ul {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 10px !important;
+  text-align: center; }
+
+.footer-02 li {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 35px;
+  font-size: 0.8rem;
+  display: inline !important; }
+
+.footer-02 li::after {
+  content: "-";
+  padding: 0 5px 0 0; }
+
+.footer-02 ul li:last-child:after {
+  content: ""; }
+
+.footer-02 li a {
+  color: rgba(255, 255, 255, 0.7) !important; }
+
+.footer-02 li a:hover {
+  text-decoration: none !important;
+  color: #fff !important; }
+
+@media (max-width: 850px) {
+  .footer-01 {
+    background-size: 130px auto;
+    background-position: bottom 10px right 10px; } }
+@media (max-width: 750px) {
+  .footer-01 {
+    justify-content: center;
+    background-size: 150px auto; }
+
+  .footer-menu {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px; }
+
+  .footer-coordonates {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; } }
+/*
+ ***************************************
+ * 9 - PAGE INTERNE
+ ***************************************
+ */
+.page-interne {
+  padding: 20px 40px;
+  min-height: 400px; }
+
+.page-interne h1,
+.page-interne h2,
+.page-interne h3,
+.page-interne h4 {
+  font-family: "Oswald", sans-serif;
+  color: #314047; }
+
+.page-interne h1 {
+  padding-bottom: 30px !important;
+  font-weight: 200;
+  font-size: 2.5rem; }
+
+.page-interne h2 {
+  font-size: 1.6rem;
+  padding-top: 20px !important;
+  padding-bottom: 10px !important; }
+
+.page-interne h3 {
+  font-size: 1.4rem; }
+
+.page-interne p {
+  line-height: 1.6rem; }
+
+.page-interne a {
+  color: #142931;
+  font-weight: bold;
+  text-decoration: none; }
+
+.page-interne a:hover {
+  text-decoration: underline !important; }
+
+/*
+ ***************************************
+ * 10 - WOOCOMMERCE SURCHARGE
+ ***************************************
+ */
+header,
+header .woocommerce-products-header {
+  background-color: transparent;
+  height: auto;
+  padding: 0px !important; }
+
+h1.woocommerce-products-header__title {
+  font-family: "Oswald", sans-serif;
+  color: #314047;
+  font-weight: 200; }
+
+button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .added_to_cart.alt, .widget-area .widget a.button.alt, .added_to_cart, .widget a.button.checkout {
+  background-color: #314047;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
+.woocommerce-billing-fields,
+.woocommerce-additional-fields {
+  width: 300px !important; }
+
+@media (max-width: 450px) {
+  .woocommerce-billing-fields,
+  .woocommerce-additional-fields {
+    margin-left: -50px !important;
+    width: 250px; } }
+.woocommerce-Address {
+  min-width: 350px; }
+
+.woocommerce-Addresses {
+  display: flex;
+  flex-direction: column; }
+
+.stock.in-stock::before {
+  content: ''; }
+
+.stock.out-of-stock::before {
+  content: '' !important; }
+
+/*# sourceMappingURL=style.css.map */
