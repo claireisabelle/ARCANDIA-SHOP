@@ -17,7 +17,7 @@ Storefront
 ```
 
 
-## Authors
+## Auteur
 
 * **Claire Bourdalé** - [Arroweb](https://arroweb.net)
 
