@@ -87,7 +87,7 @@
 	        );
         ?>
 
-		<a class="navbar-brand" href="<?php echo get_theme_mod('panier_btn_url', '#'); ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <?php echo get_theme_mod('panier_btn_titre', 'Mon Panier'); ?></a>
+		<a class="navbar-brand" href="<?php echo get_theme_mod('panier_btn_url', '#'); ?>"><i class="fa fa-shopping-basket" aria-hidden="true"></i> <?php echo get_theme_mod('panier_btn_titre', 'Mon Panier'); ?></a>
 	</nav>
 
 
