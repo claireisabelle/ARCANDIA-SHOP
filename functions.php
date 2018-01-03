@@ -107,8 +107,29 @@ function custom_paypal_button_text( $translated_text, $text, $domain ) {
 		case 'Proceed to PayPal' :
 			$translated_text = __( 'Proceed', 'woocommerce' );
 			break;
+
+		case 'Related products' :
+			$translated_text = __( 'Related CD Albums', 'woocommerce' );
+			break;
 	}
 	return $translated_text;
 }
+
+/* 
+ ***********************************************
+	CHANGE CART TO BASKET
+ ***********************************************
+ */
+
+function gb_change_cart_string($translated_text, $text, $domain) {
+ 
+$translated_text = str_replace("cart", "basket", $translated_text);
+ 
+$translated_text = str_replace("Cart", "Basket", $translated_text);
+ 
+return $translated_text;
+}
+ 
+add_filter('gettext', 'gb_change_cart_string', 100, 3);
 
 
